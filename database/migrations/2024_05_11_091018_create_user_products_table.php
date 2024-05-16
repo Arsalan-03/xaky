@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('user_products', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('user_id')->index();
-            $table->unsignedInteger('product_id')->index();
+            $table->unsignedInteger('user_id')->references('id')->on('users');
+            $table->unsignedInteger('product_id')->references('id')->on('products');
             $table->unsignedInteger('quantity');
             $table->timestamps();
         });

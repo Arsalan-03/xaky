@@ -4,6 +4,7 @@ services:
       context: docker/php
     volumes:
       - '.:/var/www/html'
+      - './docker/php/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini'
     restart: always
     depends_on:
       - db

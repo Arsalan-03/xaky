@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('user_id')->index();
+            $table->unsignedInteger('user_id')->references('id')->on('users');
             $table->string('name');
             $table->string('address');
             $table->dateTime('delivery_date');
