@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Category;
 
 class MainController extends Controller
 {
     public function getMain()
     {
-        return view('main');
+        $categories = Category::all();
+        return view('main', ['categories' => $categories]);
     }
 }
