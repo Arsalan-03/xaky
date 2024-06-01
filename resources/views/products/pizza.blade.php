@@ -1,251 +1,302 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a46d1bff8.js" crossorigin="anonymous"></script>
+    <title>Xaky</title>
 </head>
 <body>
 
-<div class="main">
-    <header>
-        <section>
-            <div class="container">
-                <div class="block2">
-                    <div class="header-left">
-                        <nav>
-                            <ul>
-                                <li><a href="#">О компании</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                                <li><a href="#">Доставка, оплата, акции и подробно</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                                <li><a href="#">Вакансии </a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                                <li><a href="#">Акции</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/main">Хаку</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
 
-                    <div class="header-right">
-                        <div class="header-container">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Роллы и Суши &blacktriangledown;
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/products.branded">Фирменные роллы</a></li>
+                        <li><a class="dropdown-item" href="/products.baked">Запечённые роллы</a></li>
+                        <li><a class="dropdown-item" href="/products.cold">Холодные роллы</a></li>
+                        <li><a class="dropdown-item" href="/products.tempura">Темпурные роллы</a></li>
+                        <li><a class="dropdown-item" href="/products.classic">Классические роллы</a></li>
+                        <li><a class="dropdown-item" href="/products.sushi">Суши</a></li>
+                    </ul>
+                </li>
 
-                            <div class="header-phone">
-                                <i class="bi bi-telephone-fill">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="28" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                                    </svg>
-                                </i>
-                                <nav>
-                                    <ul>
-                                        <li class="phone">
-                                            <a href="#"> +7-924-507-88-51 </a>
-                                        </li>
-                                    </ul>
-                                </nav>
+                <li class="nav-item">
+                    <a class="nav-link" href="/products.combo">Комбо Наборы</a>
+                </li>
 
-                                <div class="border"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="/products.pizza">Пицца</a>
+                </li>
 
-                                <div class="bootstrap">
-                                    <i class="bi bi-person-fill">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="55" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                                        </svg>
-                                    </i>
+                <li class="nav-item">
+                    <a class="nav-link" href="/products.sets">Сеты</a>
+                </li>
 
-                                    <i class="bi bi-basket">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="55" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
-                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/>
-                                        </svg>
-                                    </i>
+                <li class="nav-item">
+                    <a class="nav-link" href="/products.udon">Удон</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/products.burgers">Бургеры</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ещё &blacktriangledown;
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/products.beverages">Напитки</a></li>
+                        <li><a class="dropdown-item" href="/products.snacks">Закуски</a></li>
+                        <li><a class="dropdown-item" href="/products.additional">Дополнительное</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Регистрация</a></li>
+                        <li><a class="dropdown-item" href="#">Авторизация</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                    <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="modal-cartLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header bg-secondary text-white">
+                                    <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td><img src="https://sun9-61.userapi.com/impg/YiYH4U6iAuYKiDqagSCMkhUfCX7lmDecoAaX5A/OHKBvKGYdBk.jpg?size=600x600&quality=95&sign=dc8c8cc9febdef08509c1922288057a7&type=album" alt=""></td>
+                                            <td><a href="#">Каноха</a></td>
+                                            <td>$420</td>
+                                            <td>1</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="https://sun9-50.userapi.com/impg/1kMobRuBM4gOLa6L2H5MZExmDGnIQK9hYrMQEA/lWTyZ_bi5bA.jpg?size=584x389&quality=95&sign=d2a589eca9aecd40999f6afb3510c866&type=album" alt=""></td>
+                                            <td><a href="#">Сяке темпура</a></td>
+                                            <td>$400</td>
+                                            <td>3</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><img src="https://sun9-63.userapi.com/impg/sf83C5oc4Or8QfKlwmJI0cbEbmXy25W6Ef4rtw/ZKvuY6emObU.jpg?size=970x642&quality=95&sign=f4be901cf330c759f4f430a3bf3beb8e&type=album" alt=""></td>
+                                            <td><a href="#">Самурай</a></td>
+                                            <td>$440</td>
+                                            <td>5</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Оформить заказ</button>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
+
+
+
+
+
+<footer>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-6">
+                    <h4> Информация </h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#"> Главная </a></li>
+                        <li><a href="#"> О ресторане </a></li>
+                        <li><a href="#"> Доставка и акции </a></li>
+                        <li><a href="#"> Контакты </a></li>
+                    </ul>
                 </div>
+
+                <div class="col-md-3 col-6">
+                    <h4> Время работы </h4>
+                    <ul class="list-unstyled">
+                        <li>Пгт. Дульдурга, ул. Лесная, 29</li>
+                        <li>пн-вс: 11:00 - 21:00</li>
+                        <li>Без перерыва</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <h4>Контакты</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="tel: +7-924-507-88-51">Дульдурга: +7-924-507-88-51 </a></li>
+                        <li><a href="tel: 50-00-90">Новокручининск: 50-00-90</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3 col-6">
+                    <h4>Мы в сети</h4>
+                    <div class="footer-icons">
+                        <a href="#">Группа Дульдурга: <i class="fa-brands fa-viber"></i></a> <br>
+                        <a href="#">Группа Новокручининск: <i class="fa-brands fa-viber"></i></a>
+                    </div>
+                </div>
+
             </div>
+        </div>
+    </section>
+</footer>
 
-            <div class="block1">
-                <a class="logo" href="/main"> Хаку </a>
 
-                <nuv>
-                    <il>
-                        <di><a href="/products.combo">Комбо наборы</a></di>
-                        <di><a href="/products.branded">Фирменные роллы</a></di>
-                        <di><a href="products.baked">Запеченные роллы</a></di>
-                        <di><a href="products.cold">Холодные роллы</a></di>
-                        <di><a href="products.tempura">Темпурные роллы</a></di>
-                        <di><a href="products.sets">Наборы</a></di>
-                        <di><a href="products.pizza">Пицца</a></di>
-                        <di><a href="products.snacks">Закуски</a></di>
-                        <di><a href="products.beverages">Напитки</a></di>
-                        <di><a href="products.udon">Удон</a></di>
-                        <di><a href="products.childrenSets">Детские наборы</a></di>
-                        <di><a href="products.additional">Дополнительные соуса и ингридиенты</a></di>
-                    </il>
-                </nuv>
-            </div>
-
-        </section>
-    </header>
-</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        list-style: none;
-        text-decoration: none;
+    html {
+        font-size: 18px;
     }
 
     body {
-        height: 100vh;
-        /*background-image: url("https://s3-alpha-sig.figma.com/img/16b7/64de/8fefb65833b008164ebb4cf2ff06ad13?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nhvbVEeCvxUjxfHBRuV9qAH1GaZFvykh6FQCfhJWEhw691bqer96Zu~8KZ4mum7TQv76W4LbUt9hCy3l5EvpDezuBpHF1rXW8n~EW5ikT6tSCiq5gIaCLW4460b8ylnD0zo4pb2FdN82Bchj0pX1ndRUQLWKExxgxKTrJOUef~NJoKT6eFavnueRqpbCytOw-TNyckDS~hALO3UjfJ51x1L2D73kVdrPM3SnJdkKG2-JWvTT63rJB5oeGqKPhTCH8VqLL~uzmA0q-4nc8eJ2jB1yakawMEjdIQbsnq51yoka5vO41pCSTl7m-g22nbzU1WeV3K3T7xPyvXnB40wuwA__");*/
-        background-repeat: no-repeat; /*картинканебудетповторятся */
-        background-size: cover; /* картинка будет растянута на весь экран */
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #000000;
+        background-color: #ffffff;
+        min-width: 320px;
     }
 
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    a {
+        color: #111;
+    }
+
+    a:hover {
+        color: #555;
+    }
+
+    /* Header */
+    .navbar-dark .navbar-nav .nav-link {
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .navbar-nav .dropdown-menu {
         right: 0;
-        background: #ffffff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 5px 10px #000000;
+        left: auto;
     }
 
-    .logo {
-        font-size: 25px;
-        font-weight: 900;
-        color: #a40f0f;
-        transition: .5s;
-        text-decoration: none;
-        margin-left: 70px;
-        margin-bottom: 15px;
+    .top-menu li a::after {
+        content: '';
+        display: block;
+        width: 100%;
+        background-color: #ffffff;
+        height: 1px;
+        transition: all .3s;
+        transform: scale(0);
     }
 
-    header .logo:hover {
-        transform: scale(1.2);
-        color: #ffffff;
-        text-decoration: none;
+    .top-menu li a:hover::after {
+        transform: scale(1);
     }
 
-    header nav ul li {
-        position: relative;
-        float: left;
+    .modal-body img{
+        max-width: 100px;
+        max-height: 80px;
+    }
+    /* Header */
+
+    /*Footer*/
+    .footer {
+        background-color: #343434;
     }
 
-    header nav ul li a {
-        padding: 15px;
-        color: black;
+    .footer h4 {
+        color: #ccc;
+        text-transform: uppercase;
         font-size: 16px;
+        border-bottom: 1px solid #666;
+        padding-bottom: 3px;
+    }
+
+    footer a {
+        text-decoration: none;
+        transition: all .3s;
+
+    }
+
+    footer a:hover {
+        color: #fff;
+        text-decoration: underline;
+        transition: all .3s;
+    }
+
+    footer a, .footer li {
+        color: #c8c8c8;
+    }
+
+    .footer li a {
         display: block;
     }
 
-    header nav ul li a:hover {
-        color: red;
-        text-decoration: none;
+    .footer-icons a {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 20px;
     }
-
-    nav ul li ul {
-        position: absolute;
-        left: 0;
-        width: 280px;
-        background: #ffffff;
-        display: none;
-    }
-
-    nav ul li ul li {
-        width: 100%;
-        border: 1px solid rgba(0,0,0,.1);
-    }
-
-    nav ul li:active > ul {
-        display: initial;
-    }
-
-    .header-right {
-        height: 57px;
-    }
-
-    .header-phone
-    {
-        display: flex;
-        padding: 0 60px 0 325px;
-    }
-
-    .bootstrap {
-        padding: 0 0 0 35px;
-        letter-spacing: 30px;
-    }
-
-    .border {
-        position: relative;
-        border-right: 1px solid #FFFF;
-        padding-right: 0;
-        height: 56px;
-    }
-
-    .block1 nuv il {
-        list-style: none; /* Убираем маркеры списков */
-        padding: 0; /* Убираем отступы */
-    }
-
-    .block1 nuv di {
-        display: block; /* Делаем каждый пункт списка блоком */
-        margin-top: 22px;
-        margin-bottom: 0; /* Добавляем отступ снизу */
-    }
-
-    .block1 nuv il di a {
-        color: #000000;
-        font-size: 18px;
-        display: block; /* Делаем ссылки блочными */
-        padding: 10px; /* Добавляем отступы для ссылки */
-        text-decoration: none; /* Убираем подчеркивание */
-        font-family: Tinos, serif;
-        background: rgba(255, 255, 255, 0.58);
-
-    }
-
-    .block1 nuv a:hover {
-        background: darksalmon;
-    }
-
-    .container {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-    }
-
-    .block1 {
-        width: 11%;
-        position: fixed;
-        height: 100vh;
-        background: #000000;
-    }
-
-    .block2 {
-        width: 90%;
-        position: fixed;
-        display: flex;
-        justify-content: right;
-        margin-left: 180px;
-        background: #ffffff;
-    }
-
-    .bi-telephone-fill {
-        padding-top: 9px;
-    }
+    /*Footer*/
 </style>
 

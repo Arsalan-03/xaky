@@ -67,9 +67,18 @@ class ProductController
         return view('products.additional');
     }
 
-    public function test()
+    public function getClassic()
     {
-        $image = Product::where('name', 'Каноха');
-        return view('test', ['image' => $image]);
+        return view('products.classic');
+    }
+
+    public function getSushi()
+    {
+        return view('products.sushi');
+    }
+
+    public function getBurgers()
+    {
+        return view('products.burgers');
     }
 }
